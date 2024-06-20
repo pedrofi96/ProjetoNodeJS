@@ -1,0 +1,17 @@
+<p>Muito bom! Este café está com 2% de desconto!!</p>
+<table style="border: solid;">
+    <tr>
+        <th>Marca</th>
+        <th>Peso</th>
+        <th>Preço</th>
+    </tr>
+    {{#each listaDeCafes}}
+    {{#if this.exibe_cafe }}
+    <tr>
+        <td>{{this.marca}}</td>
+        <td>{{this.peso}}</td>
+        <td>{{this.preco}}</td>
+    </tr>
+    {{/if}}
+    {{/each}}
+</table>
